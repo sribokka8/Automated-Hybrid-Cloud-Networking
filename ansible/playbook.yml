@@ -1,0 +1,8 @@
+- name: Install traceroute
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install traceroute
+      apt:
+        name: traceroute
+        state: present
